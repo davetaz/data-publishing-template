@@ -1,6 +1,6 @@
 <h2>Data quality and accuracy</h2>
-{{ site.github }}
 {% for r in site.github.public_repositories %}
+        {{ r }}
 	{% if r.name == site.github.repository_name %}
 	<p>Number of known issues with dataset: <a href="{{ site.github.issues_url }}" target="_blank">{{ r.open_issues_count }}</a></p>
 
